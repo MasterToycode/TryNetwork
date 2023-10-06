@@ -9,6 +9,7 @@ import numpy as np
 model=Sequential()
 
 model.add(Dense(32,input_dim=13,activation='relu'))
+#input_shape=(13,)也是是正确的！
 model.add(BatchNormalization())
 
 model.add(Dense(16,activation='relu'))
